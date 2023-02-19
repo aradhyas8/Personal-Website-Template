@@ -1,0 +1,80 @@
+
+.card-container {
+ margin-bottom: 5%;
+
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  .card-text {
+    color: var(--color-slate);
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  margin: 0 -1rem;
+  .card-header {
+    a {
+      color: var(--color-slate-light);
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .folder {
+      color: var(--color-green);
+      margin-right: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .git-share {
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  .card-footer {
+    font-family: Space Mono,sans-serif;
+    text-transform: uppercase;
+    color: var(--color-slate-light);
+    font-size: 0.8rem;
+  }
+
+  .card {
+    color: var(--color-white);
+    background-color: rgba($color: #112240, $alpha: 1);
+    border-radius: 5px;
+    width: 18rem;
+    margin: 1rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .proj-header h1{
+    margin: auto;
+    text-align: center;
+  }
+
+  .card-deck {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center
+  }
+  .proj-header h1{
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
+  }
+}

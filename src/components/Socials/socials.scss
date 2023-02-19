@@ -1,0 +1,45 @@
+.socials {
+    a {
+      color: #a8b2d1;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        color: #64ffda;
+        transform: translateY(-5px);
+      }
+    }
+  
+      
+    position: fixed;
+    right: 4rem;
+    bottom: 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    width: fit-content;
+
+    a:last-child {
+      &:after {
+        content: "";
+        display: block;
+        height: 10rem;
+        width: 1px;
+        background-color: #fff;
+        margin-top: 1.5rem;
+        margin-left: 0.8rem;
+      }
+    }
+  }
+
+
+
+  @media screen and (max-width: 1050px) {
+    
+      .socials {
+        display: none;
+      }
+    
+  
+    }

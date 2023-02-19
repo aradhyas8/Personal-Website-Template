@@ -1,0 +1,77 @@
+.about {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  opacity: 0;
+  transform: translateY(80px);
+  animation: fadeInUp 2.5s forwards;
+
+  .about-header {
+    animation: fadeInUp 2.5s forwards;
+    h1 {
+      color: white;
+      position: relative;
+      font-size: 2.5rem;
+
+      width: fit-content;
+    }
+  }
+
+  .about-description {
+    color: var(--color-slate);
+    font-size: 1.2rem;
+    text-align: left;
+    width: 70%;
+
+    .work-link {
+      color: #64ffda;
+    }
+  }
+}
+
+.skills {
+  color: var(--color-slate);
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  justify-content: left;
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list-item {
+  text-align: left;
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+
+  &:before {
+    
+    content: "▹";
+    position: relative;
+    color: var(--color-green);
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .about {
+    .about-description {
+      margin: auto;
+      width: 100%;
+    }
+
+    .skills {
+      margin: auto;
+      text-align: left;
+    }
+    .about-header h1 {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 10%;
+      margin-top: 10%;
+    }
+
+   
+  }
+}
