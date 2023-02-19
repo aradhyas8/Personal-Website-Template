@@ -1,3 +1,4 @@
+Personal Website v1 - Developed in Jan 2023.
 
 Open your terminal or command prompt and navigate to the project directory.
 
