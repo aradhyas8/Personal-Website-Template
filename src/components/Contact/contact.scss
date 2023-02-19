@@ -1,0 +1,61 @@
+.contact-father {
+ margin-bottom: 5%;
+}
+
+.contact-father .btn-outline-primary {
+  color: #64ffda !important;
+  border-color: #64ffda !important;
+  &:hover {
+    background-color: #64ffda !important;
+    color: #fff !important;
+    border-color: #64ffda !important;
+  }
+}
+
+.contact {
+  height: 65vh;
+  text-align: center;
+  .contact-description {
+    padding-top: 10%;
+  }
+
+  .contact-header h1 {
+    color: var(--color-white);
+    position: relative;
+    text-align: left;
+    margin-bottom: 5%;
+    font-size: 2.3rem;
+  }
+
+  .title h2 {
+    font-size: 1.2rem;
+    color: var(--color-green);
+  }
+
+  .get-touch p {
+    font-size: 1.5rem;
+  }
+
+  .statement p {
+    color: var(--color-slate);
+    font-size: 1.2rem;
+  }
+
+  button {
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact-father{
+      .contact-header h1 {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 10%;
+        margin-top: 10%;
+      }
+    }
+
+    }
+  

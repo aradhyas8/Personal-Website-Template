@@ -1,0 +1,50 @@
+.nav-container {
+ 
+  position: fixed;
+  display: flex;
+  margin-left: 50%;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+
+  right: 0;
+  z-index: 1;
+  background: var(--color-bg);
+  backdrop-filter: blur(20px);
+  width: 50%;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.navi-list {
+  display: flex;
+  height: 2rem;
+  justify-content: flex-end;
+
+}
+
+.navi-top {
+  .digit {
+    color: #64ffda;
+    padding-right: 0.2rem;
+  }
+
+  .text {
+    color: #fff;
+    padding-right: 1.5rem;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+

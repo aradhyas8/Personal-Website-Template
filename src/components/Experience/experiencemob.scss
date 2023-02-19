@@ -1,0 +1,97 @@
+.exp-mob {
+  margin-bottom: 5%;
+
+.accordion-item {
+
+
+  background-color: transparent;
+
+  .accordion-header {
+    color: grey;
+  }
+
+  .accordion-button {
+    &.collapsed {
+      
+      border-radius: 5px;
+      color: var(--color-white);
+    }
+
+    &:focus,
+    &:hover {
+      color: var(--color-green);
+    }
+
+    &[aria-expanded="true"] {
+      border-radius: 5px;
+      background-color: rgba($color: #64ffda, $alpha: 0.5);
+      color: var(--color-white);
+    }
+  }
+
+  .show {
+    .accordion-header {
+      color: var(--color-green);
+    }
+
+    .accordion-button {
+      color: var(--color-green);
+    }
+  }
+}
+
+.accordion-button {
+  background-color: rgba($color: #ffffff, $alpha: 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+.accordion-button {
+  &.collapsed {
+    img {
+      width: 3rem;
+      height: 3rem;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+
+    .exp-logo-white {
+      width: 7rem;
+      height: 1.8rem;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    img {
+      width: 3rem;
+      height: 3rem;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+
+    .exp-logo-white {
+      width: 7rem;
+      height: 2rem;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+  }
+}
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .exp-header h1 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+ 
+  }
+}
+
+
